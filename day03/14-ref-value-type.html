@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //VALUE TYPE
+
+    let x =5;
+    let y= x;
+    
+    console.log(x===y);
+
+    let name1 = "Ali"
+    let name2 = name1;
+
+    console.log(name1===name2);
+
+name2="veli"
+console.log(name1===name2);
+
+let computer1 = {cpu:"intel",ram:16,disc:512};
+let computer2 = {cpu:"intel",ram:16,disc:512};
+let computer3 = computer1
+
+console.log(computer1 === computer2);
+console.log(computer3 === computer1);
+
+
+computer1.cpu ="AMD"
+console.log(computer1);
+console.log(computer3);
+
+computer3.ram = 32;
+console.log(computer1);
+console.log(computer3);
+
+
+
+console.log({}==={});
+console.log([]===[]);
+console.log(null===null);
+
+
+//null object turunde olmasina ragmen value type olarak kabul edilir.
+console.log(typeof null);
+const n1= null;
+const n2 = null;
+console.log(n1 === n2);
+
+
+
+
+
+    </script>
+</body>
+</html>

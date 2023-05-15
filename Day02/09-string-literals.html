@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string-literals</title>
+  </head>
+  <body>
+    
+    <script>
+      const salary="3000"
+      const name= "Ali"
+      const Company= "starling"
+      //const message= name+","+Company+"sirkketinden aylik "+salary+"$ maasla ise basladi";
+
+      const message=`${name},${Company} sirketinde aylik $${salary} maasla ise basladi`;
+      alert(message)
+
+      //backtick ile cok satir deger iceren string degiskenler olusturabiliriz.
+      const paragraf=`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quae
+    similique aspernatur unde libero hic voluptatem quos vitae debitis,
+    molestiae reprehenderit id provident tenetur deleniti dolor ex aliquid optio
+    totam! Ratione, nostrum illum unde recusandae molestias expedita sed
+    perspiciatis tenetur, maxime, vero sapiente assumenda dolorum vel incidunt
+    consequuntur earum nulla impedit? Quod omnis reiciendis nemo nisi molestias
+    mollitia commodi eum? Mollitia recusandae quod deserunt eaque cumque
+    perferendis expedita non nobis iure voluptas, officia possimus magnam
+    temporibus dolor maxime aliquam pariatur similique voluptatem. Rem iure vero
+    odio pariatur tempore quidem similique? Veritatis iste sint exercitationem
+    voluptate harum temporibus cumque, deleniti eligendi expedita ipsum quos
+    tempora vero accusantium. Beatae, iste. Quo itaque fuga a nesciunt ex
+    voluptates corrupti! Ut aspernatur fuga voluptatum!`;
+
+     let html='<div class="card">';
+        html=html+'<div class="card-body">Hello</div>';
+        html=html+'</div>';
+        document.write(html);
+
+
+    // Artik boyle kolayca yapiliyor. 
+     const newhtml=`
+    <div>
+        <h2>TitleX</h2>
+        <p>$${Company}</p>
+    </div>
+    `;    
+    document.write(newhtml);
+
+
+
+    </script>
+  </body>
+</html>
